@@ -1,4 +1,4 @@
-function adjustTypingSize() {
+function adjustTypingSizes() {
   const selector = `[data-animation="typing"]`;
   const typingElements = document.querySelectorAll(selector);
   typingElements.forEach((element) => {
@@ -6,4 +6,4 @@ function adjustTypingSize() {
   });
 }
 
-adjustTypingSize();
+adjustTypingSizes();
