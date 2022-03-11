@@ -1,0 +1,25 @@
+[data-animation="typing"] {
+  --typing-length: 22;
+  --typing-size: calc(var(--typing-length) * 1ch);
+  --typing-speed: 2s;
+
+  width: var(--typing-size);
+  animation: typing var(--typing-speed) steps(var(--typing-length)),
+    effect 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes effect {
+  50% {
+    border-color: transparent;
+  }
+}
